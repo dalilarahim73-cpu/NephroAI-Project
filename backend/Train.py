@@ -22,7 +22,7 @@ print("=" * 60)
 print("  ESRD PREDICTION — TRAINING PIPELINE (XGBoost)")
 print("=" * 60)
 
-data = pd.read_csv("data/esrd_prediction_dataset.csv")
+pd.read_csv("../data/esrd_prediction_dataset.csv")
 print(f"Dataset shape : {data.shape}")
 print(f"ESRD Risk dist:\n{data['ESRD Risk'].value_counts()}\n")
 
