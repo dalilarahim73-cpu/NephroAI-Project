@@ -4,4 +4,3 @@ services:
     runtime: python
     buildCommand: pip install -r requirements.txt 
     startCommand: gunicorn backend.App:app --bind 0.0.0.0:$PORT --timeout 120
-   
