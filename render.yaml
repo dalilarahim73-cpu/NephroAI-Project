@@ -2,6 +2,6 @@ services:
   - type: web
     name: NephroAI
     runtime: python
-    buildCommand: pip install -r requirements.txt && python train.py
-    startCommand: gunicorn App:app --bind 0.0.0.0:$PORT --timeout 120
+    buildCommand: pip install -r requirements.txt 
+    startCommand: gunicorn backend.App:app --bind 0.0.0.0:$PORT --timeout 120
    
